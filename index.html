@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet"><link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./imgs/bookmark.png">
+    <title>Bookmark</title>
+</head>
+<body>
+  <section>
+
+  
+  <div class="container container d-flex flex-column justify-content-center align-items-center">
+    <h1 >Bookmarker</h1>
+    
+    <div class="bookmark w-100">
+    <div class="bookmark-head mb-4  d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-bookmark me-2"></i>
+      <h2 class="m-0">
+        Bookmark your favorite sites 
+      </h2>
+      <i class="fa-solid fa-bookmark ms-2"></i>
+    </div>
+    <div class="bookmark-body">
+      <div class="mb-4">
+        <label class=" fw-bold mb-2 " for="BookmarkName"><i class="fa-solid fa-book-bookmark me-2"></i> Site Name</label>
+        <input type="email" class="form-control" id="BookmarkName" placeholder="Bookmark Name">
+      </div>
+      <div class="mb-4">
+        <label class=" fw-bold mb-2 " for="WebSiteURL"><i class="fa-solid fa-link"></i> Site URL</label>
+        <input type="email" class="form-control" id="WebSiteURL" placeholder="Web Site URL">
+      </div>
+      <button id="addbtn" class=" btn btn-style d-block m-auto"> Submit </button>
+    </div>
+
+    
+    </div>
+
+    <table class="table text-center mt-4 fs-6">
+      <thead>
+        <tr>
+          <th scope="col">Index</th>
+          <th scope="col">Website Name</th>
+          <th scope="col">Visit</th>
+          <th  scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tablebody">
+        
+   
+      </tbody>
+    </table>
+    <div id="modal" class="modal-style d-none  d-flex justify-content-center align-items-center">
+      <div class="inner rounded-3">
+       <div class="inner-head d-flex justify-content-between align-items-center">
+        <div class="circles">
+          <i class="fa-solid fa-circle circle1"></i>
+          <i class="fa-solid fa-circle circle2"></i>
+          <i class="fa-solid fa-circle circle3"></i>
+        </div>
+        <button id="closebtn" type="button" class="btn-close" ></button>
+      
+       </div>
+       <div class="inner-body mt-4">
+        <p class="body-head">Site Name or Url is not valid, Please follow the rules below :</p>
+        <p><i class="fa-regular fa-circle-right p-2"></i>Site name must contain at least 3 characters</p>
+        <p><i class="fa-regular fa-circle-right p-2"></i>Site URL must be a valid one</p>
+       </div>
+      </div>
+    
+    
+  </div>
+    
+
+    
+  </div>
+   </section>
+   
+      
+
+
+      
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
